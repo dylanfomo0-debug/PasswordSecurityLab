@@ -1,0 +1,30 @@
+Attack,Attempts,Compromised,Details,Difficulty,Password_Length,Success,Time,User
+Dictionary,3,,,Weak,11,Yes,7e-06,admin
+Dictionary,4,,,Weak,6,Yes,4e-06,alice
+Dictionary,5,,,Weak,6,Yes,4e-06,bob
+Dictionary,6,,,Weak,9,Yes,5e-06,claire
+Dictionary,50,,,Medium,8,No,4e-05,dan
+Dictionary,50,,,Medium,9,No,4e-05,emma
+Dictionary,50,,,Medium,10,No,4e-05,frank
+Dictionary,50,,,Strong,8,No,4e-05,grace
+Dictionary,50,,,Strong,8,No,4e-05,henry
+Dictionary,50,,,Strong,8,No,4e-05,ivy
+Dictionary,1,,,Weak,6,Yes,1e-06,jack
+Dictionary,2,,,Weak,8,Yes,2e-06,kelly
+Brute Force,500002,,,Weak,11,No,0.491526,admin
+Brute Force,500002,,,Weak,6,No,0.509917,alice
+Brute Force,500002,,,Weak,6,No,0.536949,bob
+Brute Force,500002,,,Weak,9,No,0.500305,claire
+Brute Force,500002,,,Medium,8,No,0.499358,dan
+Brute Force,500002,,,Medium,9,No,0.489481,emma
+Brute Force,500002,,,Medium,10,No,0.503487,frank
+Brute Force,500002,,,Strong,8,No,0.50813,grace
+Brute Force,500002,,,Strong,8,No,0.500118,henry
+Brute Force,500002,,,Strong,8,No,0.517737,ivy
+Brute Force,500002,,,Weak,6,No,0.502106,jack
+Brute Force,500002,,,Weak,8,No,0.496587,kelly
+Spraying (password123),12,1,admin,,,Yes,2e-05,MULTIPLE
+Spraying (123456),12,1,jack,,,Yes,2.9e-05,MULTIPLE
+Spraying (welcome),12,0,,,,No,1e-05,MULTIPLE
+Spraying (admin),12,0,,,,No,1e-05,MULTIPLE
+Spraying (qwerty),12,1,alice,,,Yes,1e-05,MULTIPLE
