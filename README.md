@@ -31,3 +31,10 @@ python3 -m unittest discover -s tests -v
 - How would slow password hashing change attacker cost?
 
 All passwords are generated or clearly synthetic. No plaintext credential file is committed.
+## Project reflection
+
+- **What I personally implemented:** I wrote the synthetic target categories, SHA-256 modeling helper, dictionary strategy, pattern strategy, bounded brute-force strategy, experiment runner, and unit tests.
+- **One actual result:** All **4 tests passed**; the pattern strategy found the synthetic `Password123!` target in **2 guesses**, while the bounded brute-force strategy reached **205,426 attempts** for the short random target.
+- **One unexpected result:** The long synthetic passphrase was found immediately by the dictionary strategy because it had accidentally been included in the dictionary, revealing target leakage in the experiment design.
+- **One limitation:** The toy SHA-256 and bounded lowercase brute-force model cannot establish real-world password-cracking time or recommend a production password-storage design.
+- **Next iteration:** I intend to remove dictionary target leakage, repeat the experiment across generated password categories, and compare the cost model with Argon2id or bcrypt.
